@@ -22,7 +22,6 @@ class ScannerController extends Controller
     {
         $returnValue =  Publikasi::where('qrcode', $request->qrcode)
             ->update(['terakhir_discan' => date("Y-m-d h:i:s")]);
-
         return $returnValue;
     }
 }

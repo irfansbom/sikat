@@ -43,6 +43,7 @@ class PublikasiController extends Controller
                 'status_website' => $request->status_website,
                 'cover' => $namecover,
                 'pdf' => $namepdf,
+                'qrcode' => $request->qr_code
             ]
         );
         return response()->json($post);
